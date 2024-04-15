@@ -1,0 +1,11 @@
+.container{
+    position: relative;
+}
+
+img{
+    position: absolute
+}
+
+#img2{
+    z-index: 1; /* 2nd image na frontlottu konduvannu...so 1st image idinta backlottu poyii */
+}

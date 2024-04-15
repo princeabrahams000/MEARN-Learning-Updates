@@ -1,0 +1,13 @@
+@media(max-width:768px){
+    #image2{
+        /* display: none; */
+        visibility: hidden;
+    }
+}
+
+@media(min-width:768px){
+    #image1{
+        /* display: none; */
+        visibility: hidden;
+    }
+}

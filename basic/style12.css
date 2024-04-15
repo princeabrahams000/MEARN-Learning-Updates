@@ -1,0 +1,15 @@
+div{
+width: 400px;
+/* height: 500px; */
+border: 1px solid;
+padding: 20px;
+border-radius: 20px;
+}
+
+div img{
+    border-radius: 10px;
+}
+
+div p{
+    font-size: 10px;
+}

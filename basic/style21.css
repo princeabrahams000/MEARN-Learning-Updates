@@ -1,0 +1,8 @@
+:root{
+    --x:blue
+}
+
+h1{
+    --y: orange; /* its a local variable */
+    color: var(--x) /* its a global varibale */
+}

@@ -1,0 +1,19 @@
+h3{
+    color: aqua;
+}
+
+
+#para1{
+    color: blueviolet;
+}
+
+
+
+.para2{
+    color: brown;
+    background-color: aqua;
+}
+
+*{
+    background-color: bisque;
+}

@@ -1,0 +1,109 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cover{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.wrapper{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid black;
+    padding:10px;
+    
+    
+}
+
+.icon{
+    text-align: center;
+}
+
+.icon i{
+    font-size: 50px;
+}
+
+.head{
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 24pxk;
+    color: white;
+}
+
+.login-wrapper{
+    background-color: rgba(255, 255, 255, 0.164);
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+
+.input-box{
+    margin: 25px 0px;
+}
+
+input{
+    width: 100%;
+    padding: 5px 4px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.208);
+    outline: none;
+}
+
+.label{
+    margin: 5px 0px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}   
+
+.label a{
+    font-size: 14px;
+    text-decoration: none;
+    color: blue;
+}
+
+.button{
+    color: white;
+    background-color: green;
+    font-size: 18px;
+    margin-top: ;
+}
+
+.info{
+    background-color: rgba(255, 255, 255, 0.151);
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.info a{
+    color: blue;
+    text-decoration: none;
+}
+
+.create-an-account{
+    margin-top: 10px;
+}
+
+.passkey{
+    color: blue;
+    font-size: 18px;
+}
+
+footer{
+    
+}
