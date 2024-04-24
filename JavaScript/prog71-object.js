@@ -12,7 +12,8 @@ employee = {
     designation: 'developer',
     location: 'kochi',
     salary: '25000',
-    experience:'3'
+    age: 35
+    
 }
 
 console.log(arr);
@@ -58,4 +59,40 @@ console.log(`emplocation key is ${'emplocation' in employee?'present':'not prese
 // how to add a key: value pair into an object
 // objectname ["key"]=value
 
-//add experiance 
+//add experiance to the given object employee
+
+    employee["experience"]=3
+    console.log(employee);
+
+    console.log('----------------------------');
+// check 'gender' key in the given employee. if presenent print 'yes' else add gender key to the given object with value has male.
+
+if('gender' in employee){
+    console.log('Yes');
+}
+else{
+    employee["gender"]='male'
+    console.log(employee);
+}
+
+console.log('-----------or-----------------');
+
+'gender' in employee?console.log('yes'):(employee["gender"]='male', console.log(employee))
+
+
+// update a value in an object
+// ---------------------------
+
+employee.age+=5
+console.log(employee);
+
+// how to delete a key from an object
+// ----------------------------------
+
+// delete method - returns boolean value
+
+delete employee.age
+console.log(employee);
+
+
+// hw - student object - get, add, update , delete
