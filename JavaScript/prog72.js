@@ -23,3 +23,6 @@ car.varient.push('automatic')
 console.log(car);
 
 // write a programme to add a new key as 'color' with value as red, blue and white.
+
+car["color"]=['red','blue','white']
+console.log(car);

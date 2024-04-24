@@ -28,6 +28,7 @@ console.log(arr[2]);//array
 //different method to access values stored in a key
 console.log(employee['designation']);//object
 console.log(employee.name);
+//console.log(employee[key]);
 
 
 //how to access a from a object
