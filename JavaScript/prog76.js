@@ -7,13 +7,59 @@ products=[
 ]
 
 //1. print product name only
+console.log('//1. print product name only');
+
+for(data of products){
+    console.log(data.pName);
+}
+
+console.log('---------or using Array method-----------');
+
+products.forEach(pro => {console.log(pro.pName)});
+
 
 //2. print all mobile details whose display is lcd
+console.log('//2. print all mobile details whose display is lcd');
+
+for(data of products){
+    if(data.display == 'lcd'){
+        console.log(data);
+    }
+}
+
+console.log('---------or using Array method-----------');
+
+products.filter(pro => pro.display == 'lcd').forEach(item => console.log(item));
+
+
 
 //3. print 5g mobile phone name
+console.log('//3. print 5g mobile phone name');
+
+for(data of products){
+    if(data.band == '5g'){
+        console.log(data.pName);
+    }
+}
+
+console.log('---------or using Array method-----------');
+
+products.filter(pro => pro.band == '5g').forEach(item => console.log(item.pName))
+
 
 //4. sort mobile based on price
+console.log('//4. sort mobile based on price');
+
+products.sort((pro1,pro2) => pro1.price - pro2.price).forEach(item => console.log(item.pName))
 
 //5. print costly mobile
+console.log('//5. print costly mobile');
+
+cpro = products.reduce((pro1,pro2) => pro1.price>pro2.price?pro1:pro2)
+console.log(cpro.pName);
 
 //6. print low cost mobile
+console.log('//6. print low cost mobile');
+
+lpro = products.reduce((pro1,pro2) => pro1.price<pro2.price?pro1:pro2)
+console.log(lpro.pName);
