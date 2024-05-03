@@ -75,17 +75,56 @@ console.log('--------------------------');
 //4. print all gpay transactions
 console.log('//4. print all gpay transactions');
 
+accounts.map(data => data.transaction).flat().filter(item => item.mode =='gpay').forEach(trans => console.log(trans));
+ 
+console.log('--------------------------');
+
+//5. print all transaction whose amount > 5000
+console.log('//5. print all transaction whose amount > 5000');
+
+accounts.map(data => data.transaction).flat().filter(item => item.amount>5000).forEach(trans => console.log(trans));
+
+console.log('--------------------------');
+
+
+//6. print credit transaction of account 1002
+console.log('//6. print credit transaction of account 1002');
+
+credit = accounts.map(data => data.transaction).flat().filter(item => item.to == 1002)
+console.log(credit);
+
+console.log('--------------------------');
+
+//7. print debit transaction of account 1002
+console.log('//7. print debit transaction of account 1002');
+
+debit = accounts.find(data => data.acno == 1002).transaction
+console.log(debit);
 
 
 console.log('--------------------------');
 
-//5. print all transaction whose amount > 5000
-
-//6. print credit transaction of account 1002
-
-//7. print debit transaction of account 1002
-
 //8. print transaction history of 1002
+console.log('//8. print transaction history of 1002');
+
+history = {}
+
+history["credit"] = credit
+history['debit'] = debit
+console.log(history);
+
+console.log('-------using spread operator-------');
+//spread (...) =>to compain two arrays
+transHistory = [...credit,...debit]
+console.log(transHistory);
+
+console.log('--------------------------');
+
 
 
 //9. print highest balance account details
+console.log('//9. print highest balance account details');
+
+highestBALANCE = accounts.reduce((data1,data2)=>data1.balance>data2.balance?data1:data2);
+console.log(highestBALANCE);
+console.log('--------------------------');
