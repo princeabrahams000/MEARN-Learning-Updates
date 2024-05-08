@@ -9,7 +9,7 @@
     <h1>JavaScript in frontend</h1>
     <h1 id="dom">DOM</h1>
     <P class="grp1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea excepturi impedit consectetur, quaerat tempore beatae doloremque numquam minima, similique doloribus cupiditate voluptas voluptatem necessitatibus eveniet veniam. Velit error corporis enim!</P>
-    <button>click</button>
+    <button onclick="change()">click</button>
     <h1 class="grp1">Dom Model</h1>
 </body>
 
@@ -39,7 +39,15 @@
 
     content[1].innerHTML = 'Document Object Model' */
 
-    dom.innerHTML = 'Document Object Model'
+    
+
+    function change(){
+        dom.innerHTML = 'Document Object Model'
+        dom.style.color = 'blue'
+        dom.style.fontSize = '75px'
+        dom.style.backgroundColor = 'orange'
+        
+    }
 
 
 
