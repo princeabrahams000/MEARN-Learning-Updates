@@ -25,4 +25,5 @@ else{
     isPrime=false
 }
 
-isPrime?console.log('PRIME'):console.log('NOT PRIME');
+/* isPrime?console.log('PRIME'):console.log('NOT PRIME'); */
+console.log(isPrime?'it is a prime no':'not a prime no');
