@@ -32,9 +32,9 @@
                 <form class="rounded shadow p-3" style="background-image: linear-gradient(to right, rgb(144, 144, 171), white);">
                     <h3 class="text-center text-primary mt-3">Register</h3>
                     <div class="px-5">
-                        <input type="text" placeholder="Username" class="form-control mt-3">
-                        <input type="text" placeholder="Password" class="form-control mt-3">
-                        <button class="btn btn-primary my-3 w-25">Register</button>
+                        <input type="text" placeholder="Username" class="form-control mt-3" id="regUser">
+                        <input type="text" placeholder="Password" class="form-control mt-3" id="regpswd">
+                        <button onclick="obj.register()" type="button" class="btn btn-primary my-3 w-25">Register</button>
                         <span class="ms-3">Are you already a User? Click here to <a href="./login.html">Login</a></span>
                     </div>
 
@@ -44,4 +44,5 @@
     </div>
     
 </body>
+<script src="./logic.js"></script>
 </html>
