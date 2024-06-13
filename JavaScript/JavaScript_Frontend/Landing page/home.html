@@ -19,14 +19,14 @@
                 <span class="text-light fs-3">DashBoard</span>
               </a>
               <div>
-                <span class="text-light fs-4 me-3"><i class="fa-solid fa-power-off me-3"></i>Logout</span>
+                <span class="text-light fs-4 me-3" onclick="Logout()"><i class="fa-solid fa-power-off me-3"></i>Logout</span>
               </div>
             </div>
           </nav>
     </header>
 
     <div>
-        <h1 class="mt-5 text-center">Welcome <span class="text-danger">User</span></h1>
+        <h1 class="mt-5 text-center">Welcome <span class="text-danger" id="username"> </span></h1>
         <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum a corrupti praesentium velit ratione dicta sit commodi nesciunt eligendi ut. Qui quos assumenda soluta quas et repellat id illo recusandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, natus itaque impedit minus ab nisi ex temporibus recusandae exercitationem aliquam. Rerum natus veniam similique velit debitis praesentium impedit in porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repudiandae qui nihil consequatur praesentium velit earum possimus dolorum iusto explicabo voluptatem impedit dicta deleniti, itaque magni tenetur! Numquam, autem eaque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quaerat praesentium reprehenderit natus. Voluptas fugiat laboriosam minima enim quidem tenetur, omnis minus labore numquam blanditiis, obcaecati doloribus dolore iure ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia recusandae incidunt adipisci. Asperiores beatae, distinctio blanditiis saepe est sed inventore quibusdam consequatur vel accusamus at dolorum voluptatibus nam enim? </p>
     </div>
    
@@ -35,6 +35,20 @@
 
 <script>
 
-  
+let user = localStorage.getItem("user")
+/* console.log(user); */
+if(!user){
+  window.location = 'login.html'
+}
+else{
+  username.innerHTML = user
+}
+
+
+function Logout(){
+  localStorage.removeItem("user")
+  window.location = 'login.html'
+}
+
 </script>
 </html>

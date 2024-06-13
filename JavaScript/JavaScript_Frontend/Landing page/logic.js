@@ -20,12 +20,17 @@ class Landing{
         /* console.log(this.database); */
     }
 
+
+
+
+    
     //method to register user
 
     register(){
-        this.getData()
+        
         let user = regUser.value
         let pswd = regpswd.value
+        this.getData()
        /*  console.log(user,pswd); */
        if(user == ""|| pswd == ""){
         alert('please fill the form completely')
@@ -43,6 +48,9 @@ class Landing{
        }
     }
     
+
+
+
     //method to login user
     login(){
         let user1 = logUser.value
