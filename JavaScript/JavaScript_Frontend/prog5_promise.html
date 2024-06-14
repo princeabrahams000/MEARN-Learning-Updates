@@ -14,12 +14,37 @@
     <h1 class="text-center text-primary mt-5">Lucky Win Contest</h1>
 
     <div style="height: 90vh; width: 100%;" class="d-flex justify-content-center align-items-center">
-        <h1 style="font-size: 100px;">Result</h1>
+        <h1 id="result" style="font-size: 100px;"></h1>
     </div>
     
 </body>
 
 <script>
+
+    //instance
+    const luckyContest = new Promise((res,rej)=>{
+
+        myLottery = 3
+        
+        //math.random - genearate random numbers between 0-1
+        lottery = Math.floor(Math.random()*5)
+
+        if(myLottery == lottery){
+            console.log('You Won');
+            res('you won')
+        }else{
+            console.log('Better Luck next time');
+            rej('Better Luck next time')
+        }
+    })
     
+    luckyContest.then((resopnse)=>{
+        result.innerHTML = resopnse
+        result.style.color = 'green'
+    }).catch((err)=>{
+        result.innerHTML = err
+        result.style.color = 'red'
+    })
+
 </script>
 </html>
