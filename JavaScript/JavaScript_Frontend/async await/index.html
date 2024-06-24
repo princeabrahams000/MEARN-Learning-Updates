@@ -96,7 +96,7 @@
 
               result.innerHTML = `
               
-                    <div class="card mx-3" style="width: 18rem;">
+                    <div class="card mx-3" style="width:25%">
                         <img src=${flags} class="card-img-top" alt="flags">
                         <div class="card-body">
                           <h5 class="card-title">${c_official}</h5>
@@ -109,14 +109,14 @@
                       </div>
     
                       
-                      <div class="card mx-3" style="width: 18rem;">
+                      <div class="card mx-3" style="width: 50%;">
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item"><b>Border:</b>${border}</li>
                           <li class="list-group-item"><b>Population:</b> ${population}</li>
                           <li class="list-group-item"><b>Area:</b>${area}</li>
                           <li class="list-group-item"><b>Timezone:</b>${timezones}</li>
                           <li class="list-group-item"><b>National Language:</b>${national_language}</li>
-                          <li class="list-group-item"><b>Currency:</b>${currencyName,currencySymbol}</li>
+                          <li class="list-group-item"><b>Currency:</b>${currencySymbol},${currencyName}</li>
                           <li class="list-group-item"><b>Map:</b><a href="${map}">${map}</a></li>
 
                         </ul>
