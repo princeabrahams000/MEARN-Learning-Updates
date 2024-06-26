@@ -1,8 +1,16 @@
 import React from 'react'
 
-function Example() {
+function Example(props) {
+
+  console.log(props);
+
   return (
-    <div>Example</div>
+    <>
+      
+      <div>Example</div>
+      <p>data shared is: {props.sub}</p>
+
+    </>
   )
 }
 

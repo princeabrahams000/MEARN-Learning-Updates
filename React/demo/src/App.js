@@ -1,5 +1,7 @@
 import './App.css';
 import myStyle from '../src/myStyle.module.css'
+import Random from './Random';
+import Example from './Example';
 
 function App() {
 
@@ -17,7 +19,12 @@ function App() {
       <h1 className={[myStyle.style2,myStyle.style3].join(' ')}>join style2 and 3</h1>
 
       <h1>My subject is:{subject}</h1>
-      <h2>My user name is: {username}</h2>
+      <h2>My user name is: {username }</h2>
+
+      <ul>
+        <li><Random uname={username}/></li>
+        <li><Example sub={subject}/></li>
+      </ul>
 
     </div>
   );
