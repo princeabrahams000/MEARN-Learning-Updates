@@ -23,7 +23,7 @@ function App() {
 
       <ul>
         <li><Random uname={username}/></li>
-        <li><Example sub={subject}/></li>
+        <li><Example sub={subject} age ={27}/></li>
       </ul>
 
     </div>
