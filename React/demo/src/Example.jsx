@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Example({sub,age}) {
+  const [concept, setConcept] = useState("hook concept")
 
   console.log(sub,age);
 //function without argument
@@ -27,6 +28,10 @@ function Example({sub,age}) {
       <p className='text-danger fs-4 fw-bolder'>data shared is not React</p>}
 
       {age == 27 && <p>data shared is: {age}</p>}
+
+      <p>hook concept intitial value is: {concept}</p>
+
+      <button className='btn btn-dark text-white me-3' onClick={()=>setConcept('Next.js')}>Click useState</button>
       
 
 
