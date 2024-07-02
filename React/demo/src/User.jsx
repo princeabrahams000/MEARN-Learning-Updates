@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 function User() {
 
-    const[color, setColor] = useState({
+   /*  const[color, setColor] = useState({
         color1:'RED',
         color2:'GREEN',
         color3:'YELLOW'  
@@ -11,7 +11,7 @@ function User() {
     console.log(color);
     const change = (data)=> {
         setColor({...color,color3:data})
-    }
+    } */
      
     const [userDetails, setUserDetails] = useState([
         {username:'neel', age:'27', desgination:'Frontend Developer'},
@@ -25,14 +25,14 @@ function User() {
    
    <div>User Component</div>
 
-   <ul>
+  {/*  <ul>
     <li>{color.color1}</li>
     <li>{color.color2}</li>
     <li>{color.color3}</li>
    </ul>
 
    <button className='btn btn-primary' onClick={()=>change('blue')}>Click</button>
-   
+    */}
    {/* TABLE */}
    <table className='table rounded shadow table-border border border-secondeary mt-5'>
     <thead>
